@@ -62,17 +62,17 @@ start_time = 0
 score = 0
 
 #colours and visuals
-font = pygame.font.Font('font/intenso-serif.ttf', 20) #(font type, font size)
-bold_font = pygame.font.Font('font/intenso-serif.ttf', 40)
+font = pygame.font.Font('intenso-serif.ttf', 20) #(font type, font size)
+bold_font = pygame.font.Font('intenso-serif.ttf', 40)
 dark_colour = pygame.Color("#4D3F3D")
 light_colour = pygame.Color("#EAEDBB")
 
-sky_surface = pygame.image.load('graphics/Sky.png').convert()
-ground_surface = pygame.image.load('graphics/ground.png').convert()
+sky_surface = pygame.image.load('Sky.png').convert()
+ground_surface = pygame.image.load('ground.png').convert()
 
 #Obstacles
-torso_surface = pygame.image.load('graphics/snail/torso.png').convert_alpha()
-head_surface = pygame.image.load('graphics/fly/head1.png')
+torso_surface = pygame.image.load('snail/torso.png').convert_alpha()
+head_surface = pygame.image.load('Fly/Fly1.png')
 
 obstacle_rect_list = []
 
@@ -85,24 +85,24 @@ obstacle_rect_list = []
 
 
 
-player_w1 = pygame.image.load('graphics/player/av_run1.png').convert_alpha()
-player_w2 = pygame.image.load('graphics/player/av_run2.png').convert_alpha()
-player_w3 = pygame.image.load('graphics/player/av_run3.png').convert_alpha()
-player_w4 = pygame.image.load('graphics/player/av_run4.png').convert_alpha()
-player_w5 = pygame.image.load('graphics/player/av_run5.png').convert_alpha()
-player_w6 = pygame.image.load('graphics/player/av_run6.png').convert_alpha()
-player_w7 = pygame.image.load('graphics/player/av_run7.png').convert_alpha()
-player_w8 = pygame.image.load('graphics/player/av_run8.png').convert_alpha()
+player_w1 = pygame.image.load('Player/av_run1.png').convert_alpha()
+player_w2 = pygame.image.load('Player/av_run2.png').convert_alpha()
+player_w3 = pygame.image.load('Player/av_run3.png').convert_alpha()
+player_w4 = pygame.image.load('Player/av_run4.png').convert_alpha()
+player_w5 = pygame.image.load('Player/av_run5.png').convert_alpha()
+player_w6 = pygame.image.load('Player/av_run6.png').convert_alpha()
+player_w7 = pygame.image.load('Player/av_run7.png').convert_alpha()
+player_w8 = pygame.image.load('Player/av_run8.png').convert_alpha()
 
-player_j1 = pygame.image.load('graphics/player/avjump1.png').convert_alpha()
-player_j2 = pygame.image.load('graphics/player/avjump2.png').convert_alpha()
-player_j3 = pygame.image.load('graphics/player/avjump3.png').convert_alpha()
-player_j4 = pygame.image.load('graphics/player/avjump4.png').convert_alpha()
-player_j5 = pygame.image.load('graphics/player/avjump5.png').convert_alpha()
-player_j6 = pygame.image.load('graphics/player/avjump6.png').convert_alpha()
-player_j7 = pygame.image.load('graphics/player/avjump7.png').convert_alpha()
-player_j8 = pygame.image.load('graphics/player/avjump8.png').convert_alpha()
-player_j9 = pygame.image.load('graphics/player/avjump9.png').convert_alpha()
+player_j1 = pygame.image.load('Player/avjump1.png').convert_alpha()
+player_j2 = pygame.image.load('Player/avjump2.png').convert_alpha()
+player_j3 = pygame.image.load('Player/avjump3.png').convert_alpha()
+player_j4 = pygame.image.load('Player/avjump4.png').convert_alpha()
+player_j5 = pygame.image.load('Player/avjump5.png').convert_alpha()
+player_j6 = pygame.image.load('Player/avjump6.png').convert_alpha()
+player_j7 = pygame.image.load('Player/avjump7.png').convert_alpha()
+player_j8 = pygame.image.load('Player/avjump8.png').convert_alpha()
+player_j9 = pygame.image.load('Player/avjump9.png').convert_alpha()
 
 player_jump = [player_j1,player_j2,player_j3,player_j4,player_j5,player_j3,player_j4,player_j6,player_j7,player_j8]
 player_walk = [player_w1,player_w2,player_w3,player_w4,player_w5,player_w6,player_w7,player_w8]
@@ -115,7 +115,7 @@ player_surface = player_walk[player_index]
 player_rect = player_surface.get_rect(topleft = (80,200)) #or midbottom = (80,300)
 player_gravity = 0
 
-player_stand = pygame.image.load('graphics/player/title_screen.png').convert_alpha()
+player_stand = pygame.image.load('Player/title_screen.png').convert_alpha()
 player_stand_scaled = pygame.transform.scale(player_stand, (400, 200))
 player_stand_rect = player_stand.get_rect(center = (350,170))
 
